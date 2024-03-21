@@ -1,0 +1,6 @@
+.DS_Store
+.vscode/
+build/
+bin/
+.cache/
+lib/boost/win/
