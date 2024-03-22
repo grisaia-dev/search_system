@@ -11,7 +11,7 @@ db::db(std::string& connect_to) {
             if (m_connection->is_open())
                 std::cout << GOOD << "Connection completed!" << std::endl;
         } else
-            throw Exception_notValid("It is impossible to connect to the database, check that the connection data is correct!");
+            throw Exception_notValid("It is impossible to connect to the database, check that the connection data is correct! Or service pg_ctl starts!");
     } catch (const Exception_notValid::broken_connection& ex) {
         std::cout << ERROR << ex.what() << std::endl;
     }
